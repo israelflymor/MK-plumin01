@@ -19,6 +19,30 @@
   }
 }
 
+/* Remove all Lovable branding, widgets, and UI elements */
+[class*="lovable"],
+[id*="lovable"],
+.lovable-logo,
+.edit-with-lovable,
+[data-testid*="lovable"],
+[data-lovable-widget],
+iframe[src*="lovable"],
+div[class*="lovableai"],
+button[aria-label*="lovable"],
+a[href*="lovable.com"],
+div[style*="lovable"],
+span[class*="edit-with"],
+.powered-by-lovable,
+[class*="lovable-widget"],
+[class*="edit-lovable"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+}
+
 /* Custom micro-animations for high-fidelity interactive accents */
 @keyframes wiggle {
   0%, 100% { transform: rotate(0); }
